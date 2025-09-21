@@ -40,6 +40,15 @@
     .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
     .brand img { height: 48px; width: auto; max-width: 180px; object-fit: contain; }
 
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+    .menu li { display: inline-block; }
+
     .btn {
       padding: 8px 14px;
       border-radius: 8px;
@@ -68,10 +77,12 @@
         <span class="title">Solyd Solutions</span>
       </a>
       <nav>
-        <a class="btn" href="#mission">Mission</a>
-        <a class="btn" href="#what">What We Do</a>
-        <a class="btn" href="#econometrics">Econometrics</a>
-        <a class="btn primary" href="#get-started">Get Started</a>
+        <ul class="menu">
+          <li><a class="btn" href="#mission">Mission</a></li>
+          <li><a class="btn" href="#what">What We Do</a></li>
+          <li><a class="btn" href="#econometrics">Econometrics</a></li>
+          <li><a class="btn primary" href="#get-started">Get Started</a></li>
+        </ul>
       </nav>
     </div>
   </header>
